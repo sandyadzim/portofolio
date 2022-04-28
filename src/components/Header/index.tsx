@@ -43,7 +43,6 @@ function Header(props: IHeaderProps) {
   }
 
   function handleLink(value: string) {
-    console.log(value)
     props.onHandleLink(value)
   }
 
