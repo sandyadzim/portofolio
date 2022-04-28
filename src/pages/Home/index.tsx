@@ -4,7 +4,7 @@ import avatar from '../../assets/img/avatar.png'
 
 function Home() {
   return (
-    <div className="flex items-center justify-center flex-col h-[80vh]">
+    <div className="flex items-center justify-center flex-col h-[80vh] fade-in">
       <div>
         <img src={avatar} alt="avatar" className="w-36 md:w-full" />
       </div>

@@ -5,6 +5,7 @@ import ButtonMenu from './ButtonMenu'
 
 interface IHeaderProps {
   activeLink: string
+  onHandleLink: (link: string) => void
 }
 
 function Header(props: IHeaderProps) {
@@ -41,6 +42,11 @@ function Header(props: IHeaderProps) {
     setSidebar(!sidebar)
   }
 
+  function handleLink(value: string) {
+    console.log(value)
+    props.onHandleLink(value)
+  }
+
   return (
     <>
       <div>
@@ -48,17 +54,25 @@ function Header(props: IHeaderProps) {
           <nav className="h-full flex justify-end">
             {/* Desktop */}
             <div className="hidden md:w-full md:justify-center lg:w-auto lg:mr-10 xl:mr-0 md:flex">
-              <ListMenu activeLink={props.activeLink} menus={listLink} />
+              <ListMenu
+                activeLink={props.activeLink}
+                menus={listLink}
+                onHandleLink={handleLink}
+              />
             </div>
 
             {/* Mobile */}
             <ButtonMenu onHandleSidebar={handleSidebar} />
             <div
-              className={`bg-white fixed items-center justify-center flex-col inset-0 z-20 md:hidden ${
+              className={`bg-white/70 backdrop-blur-xl fixed items-center justify-center flex-col inset-0 z-20 md:hidden ${
                 sidebar ? 'flex' : 'hidden'
               }`}
             >
-              <ListMenu activeLink={props.activeLink} menus={listLink} />
+              <ListMenu
+                activeLink={props.activeLink}
+                menus={listLink}
+                onHandleLink={handleLink}
+              />
             </div>
           </nav>
         </header>

@@ -8,6 +8,7 @@ interface IMenu {
 interface IListMenu {
   menus: Array<IMenu>
   activeLink: string
+  onHandleLink: (link: string) => void
 }
 
 function ListMenu(props: IListMenu) {
@@ -16,6 +17,7 @@ function ListMenu(props: IListMenu) {
       {props.menus.map((item) => (
         <li key={item.slug}>
           <button
+            onClick={() => props.onHandleLink(item.slug)}
             className={`link-nav ${
               props.activeLink === item.slug ? 'active-link' : ''
             }`}
