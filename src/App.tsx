@@ -3,11 +3,12 @@ import Header from './components/Header'
 import Pagination from './components/Pagination'
 import Home from './pages/Home'
 import About from './pages/About'
+import Tech from './pages/Tech'
 
 import './App.css'
 
 function App() {
-  const [activeLink, setActiveLink] = useState('about')
+  const [activeLink, setActiveLink] = useState('home')
 
   function ActiveSection() {
     switch (activeLink) {
@@ -15,6 +16,8 @@ function App() {
         return <Home />
       case 'about':
         return <About />
+      case 'tech':
+        return <Tech />
       default:
         return <div>404</div>
     }

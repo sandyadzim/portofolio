@@ -20,7 +20,7 @@ function Header(props: IHeaderProps) {
     },
     {
       title: 'Technology',
-      slug: 'technology',
+      slug: 'tech',
     },
     {
       title: 'Experience',
