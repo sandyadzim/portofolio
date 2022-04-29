@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import arrowLeft from '../../assets/img/icons/arrow-left.svg'
 import arrowRight from '../../assets/img/icons/arrow-right.svg'
@@ -9,29 +9,39 @@ interface IPagination {
 }
 
 function Pagination({ activeLink, onHandleLink }: IPagination) {
+  const [active, setActive] = useState(activeLink)
+
+  useEffect(() => {
+    setActive(activeLink)
+  }, [activeLink])
+
+  useEffect(() => {
+    onHandleLink(active)
+  }, [active])
+
   function nextPage(currentLink: string): void {
     switch (currentLink) {
       case 'home':
-        onHandleLink('about')
+        setActive('about')
         break
       case 'about':
-        onHandleLink('tech')
+        setActive('tech')
         break
       default:
-        onHandleLink('home')
+        setActive('home')
     }
   }
 
   function prevPage(currentLink: string) {
     switch (currentLink) {
       case 'tech':
-        onHandleLink('about')
+        setActive('about')
         break
       case 'about':
-        onHandleLink('home')
+        setActive('home')
         break
       default:
-        onHandleLink('tech')
+        setActive('tech')
     }
   }
 
