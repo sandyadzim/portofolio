@@ -27,6 +27,15 @@ function Pagination({ activeLink, onHandleLink }: IPagination) {
       case 'about':
         setActive('tech')
         break
+      case 'tech':
+        setActive('experience')
+        break
+      case 'experience':
+        setActive('project')
+        break
+      case 'project':
+        setActive('contact')
+        break
       default:
         setActive('home')
     }
@@ -34,6 +43,15 @@ function Pagination({ activeLink, onHandleLink }: IPagination) {
 
   function prevPage(currentLink: string) {
     switch (currentLink) {
+      case 'contact':
+        setActive('project')
+        break
+      case 'project':
+        setActive('experience')
+        break
+      case 'experience':
+        setActive('tech')
+        break
       case 'tech':
         setActive('about')
         break
@@ -41,12 +59,12 @@ function Pagination({ activeLink, onHandleLink }: IPagination) {
         setActive('home')
         break
       default:
-        setActive('tech')
+        setActive('contact')
     }
   }
 
   return (
-    <div className="absolute bottom-9 right-3 md:right-0">
+    <div className="absolute bottom-9 right-3 md:right-2">
       <div className="space-x-6">
         <button
           onClick={() => prevPage(activeLink)}

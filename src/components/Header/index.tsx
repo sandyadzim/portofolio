@@ -43,6 +43,7 @@ function Header(props: IHeaderProps) {
   }
 
   function handleLink(value: string) {
+    handleSidebar()
     props.onHandleLink(value)
   }
 
