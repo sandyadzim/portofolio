@@ -5,10 +5,10 @@ import aboutIcon from '../../assets/img/about.png'
 function About() {
   return (
     <div className="flex items-center justify-center md:space-x-5 h-[80vh] flex-col md:flex-row fade-in">
-      <div className="hidden md:flex justify-center md:w-1/2">
+      <div className="hidden lg:flex justify-center md:w-1/2">
         <img src={aboutIcon} alt="about" />
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 flex-1 flex justify-center flex-col">
         <h2 className="font-bold text-green-dark-pastel text-3xl md:text-5xl text-center">
           About
         </h2>

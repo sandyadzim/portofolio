@@ -16,7 +16,7 @@ import tsIcon from '../../assets/img/icons/ts.svg'
 function Tech() {
   return (
     <div className="flex items-center justify-center md:space-x-5 h-[80vh] flex-col md:flex-row fade-in">
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 flex-1 flex justify-center flex-col">
         <h2 className="font-bold text-green-dark-pastel text-3xl md:text-5xl text-center mb-6">
           Technology
         </h2>
@@ -79,7 +79,7 @@ function Tech() {
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 md:flex hidden justify-center">
+      <div className="md:w-1/2 lg:flex hidden justify-center">
         <img src={techIcon} alt="tech" />
       </div>
     </div>
