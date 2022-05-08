@@ -1,0 +1,60 @@
+.tabs {
+  @apply relative pl-3 before:bg-navy-pastel hidden md:block;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 3px;
+    border-radius: 5px;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .tab-item {
+    @apply relative text-2xl text-navy-pastel py-3 hover:before:bg-green-pastel cursor-pointer;
+    &:hover:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 3px;
+      border-radius: 5px;
+      left: -12px;
+      margin-top: -12px;
+    }
+  }
+
+  .tab-active {
+    @apply relative before:bg-green-pastel;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 3px;
+      border-radius: 5px;
+      left: -12px;
+      margin-top: -12px;
+    }
+  }
+}
+
+.tabs-sm {
+  @apply flex md:hidden items-center space-x-3 mb-5;
+
+  .tab-item {
+    @apply relative text-navy-pastel font-bold after:bg-green-pastel;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      bottom: -4px;
+      width: 0;
+    }
+  }
+  
+  .tab-active{
+    @apply text-green-pastel before:content-[''] before:absolute before:top-[26px] before:w-full before:h-[2px] before:bg-green-pastel;
+  }
+}

@@ -4,6 +4,7 @@ import Pagination from './components/Pagination'
 import Home from './pages/Home'
 import About from './pages/About'
 import Tech from './pages/Tech'
+import Experience from './pages/Experience'
 
 import './App.css'
 import Github from './assets/img/icons/github.svg'
@@ -11,7 +12,7 @@ import Instagram from './assets/img/icons/ig.svg'
 import Linkedin from './assets/img/icons/linkedin.svg'
 
 function App() {
-  const [activeLink, setActiveLink] = useState('home')
+  const [activeLink, setActiveLink] = useState('experience')
 
   const socialMedia = [
     {
@@ -34,11 +35,13 @@ function App() {
   function ActiveSection() {
     switch (activeLink) {
       case 'home':
-        return <Home />
+        return <Home social={socialMedia} />
       case 'about':
         return <About />
       case 'tech':
         return <Tech />
+      case 'experience':
+        return <Experience />
       default:
         return <div>404</div>
     }
@@ -59,7 +62,7 @@ function App() {
       <ActiveSection />
 
       {activeLink === 'home' && (
-        <div className="flex space-x-4 absolute bottom-52 md:bottom-9 left-28 md:left-0">
+        <div className="md:flex hidden space-x-4 absolute bottom-9 left-2">
           {socialMedia.map((item, index) => (
             <div key={index} className="rounded-xl shadow-base p-3">
               <a href={item.href} target={'_blank'}>
