@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Tech from './pages/Tech'
 import Experience from './pages/Experience'
+import Contact from './pages/Contact'
 
 import './App.css'
 import Github from './assets/img/icons/github.svg'
@@ -12,7 +13,7 @@ import Instagram from './assets/img/icons/ig.svg'
 import Linkedin from './assets/img/icons/linkedin.svg'
 
 function App() {
-  const [activeLink, setActiveLink] = useState('experience')
+  const [activeLink, setActiveLink] = useState('contact')
 
   const socialMedia = [
     {
@@ -42,6 +43,8 @@ function App() {
         return <Tech />
       case 'experience':
         return <Experience />
+      case 'contact':
+        return <Contact />
       default:
         return <div>404</div>
     }
@@ -56,24 +59,34 @@ function App() {
   }
 
   return (
-    <div className="App container mx-auto px-10 relative min-h-screen">
-      <Header activeLink={activeLink} onHandleLink={handleLinkFromHeader} />
+    <div className="App">
+      <div className="container mx-auto px-10 relative min-h-screen">
+        <Header activeLink={activeLink} onHandleLink={handleLinkFromHeader} />
 
-      <ActiveSection />
+        <ActiveSection />
 
-      {activeLink === 'home' && (
-        <div className="md:flex hidden space-x-4 absolute bottom-9 left-2">
-          {socialMedia.map((item, index) => (
-            <div key={index} className="rounded-xl shadow-base p-3">
-              <a href={item.href} target={'_blank'}>
-                <img src={item.img} alt={item.slug} />
-              </a>
-            </div>
-          ))}
+        {activeLink === 'home' && (
+          <div className="md:flex hidden space-x-4 absolute bottom-9 left-2">
+            {socialMedia.map((item, index) => (
+              <div key={index} className="rounded-xl shadow-base p-3">
+                <a href={item.href} target={'_blank'}>
+                  <img src={item.img} alt={item.slug} />
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {activeLink !== 'contact' && (
+          <Pagination activeLink={activeLink} onHandleLink={handleChangeLink} />
+        )}
+      </div>
+
+      {activeLink === 'contact' && (
+        <div className="w-full absolute bottom-0 bg-navy-pastel p-5 text-white font-bold text-xl text-center">
+          <footer>Assets from unDraw | Build with React JS</footer>
         </div>
       )}
-
-      <Pagination activeLink={activeLink} onHandleLink={handleChangeLink} />
     </div>
   )
 }
