@@ -1,0 +1,9 @@
+.input-custom {
+  -webkit-appearance: none;
+  @apply shadow-base rounded-md h-9 focus:outline-none p-3 text-sm text-navy-pastel;
+}
+
+.area-custom {
+  -webkit-appearance: none;
+  @apply shadow-base rounded-md focus:outline-none p-3 text-sm text-navy-pastel;
+}

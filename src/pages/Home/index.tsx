@@ -29,18 +29,18 @@ function Home({ social }: IHome) {
         </h2>
       </div>
 
-      <div className="flex mt-9 md:space-x-6">
+      <div className="flex mt-9 md:space-x-6 space-x-2">
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=sandy.adzim@gmail.com"
           target="_blank"
-          className="bg-beige-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl ml-3 md:ml-0"
+          className="bg-beige-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
         >
           Email
         </a>
         <a
           href="https://drive.google.com/file/d/1Hmmu1m6XvKj4UwyVojGGs2rv6at7e0bl/view?usp=sharing"
           target="_blank"
-          className="bg-navy-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl mx-3 md:mx-0"
+          className="bg-navy-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
         >
           Resume
         </a>

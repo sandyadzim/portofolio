@@ -91,7 +91,7 @@ function Project() {
 
   return (
     <div className="flex items-center justify-center flex-col fade-in mb-10">
-      <h2 className="font-bold text-green-dark-pastel text-3xl md:text-4xl text-center my-6">
+      <h2 className="font-bold text-green-dark-pastel text-2xl md:text-4xl text-center my-6">
         Projects i've worked on
       </h2>
 

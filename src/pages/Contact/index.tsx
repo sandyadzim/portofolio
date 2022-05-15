@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 import contactIcon from '../../assets/img/contact.png'
+import './index.scss'
 
 function Contact() {
   const [values, setValues] = useState({
@@ -122,7 +123,7 @@ function Contact() {
               </label>
               <input
                 type="text"
-                className="shadow-base rounded-md h-9 focus:outline-none p-3 text-sm text-navy-pastel"
+                className="input-custom"
                 value={values.fullName}
                 onChange={handleFullName}
               />
@@ -136,7 +137,7 @@ function Contact() {
               </label>
               <input
                 type="email"
-                className="shadow-base rounded-md h-9 focus:outline-none p-3 text-sm text-navy-pastel"
+                className="input-custom"
                 value={values.email}
                 onChange={handleEmail}
               />
@@ -151,7 +152,7 @@ function Contact() {
               <textarea
                 name="message"
                 rows={3}
-                className="shadow-base rounded-md focus:outline-none p-3 text-sm text-navy-pastel"
+                className="area-custom"
                 value={values.message}
                 onChange={handleMessage}
               ></textarea>
