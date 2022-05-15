@@ -86,7 +86,7 @@ function App() {
       </div>
 
       {activeLink === 'contact' && (
-        <div className="w-full absolute bottom-0 bg-navy-pastel p-5 text-white font-bold text-xl text-center">
+        <div className="w-full absolute bottom-0 bg-navy-pastel p-5 text-white font-bold text-xl text-center hidden md:block">
           <footer>Assets from unDraw | Build with React JS</footer>
         </div>
       )}

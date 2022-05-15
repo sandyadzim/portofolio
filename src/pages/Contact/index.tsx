@@ -89,7 +89,7 @@ function Contact() {
   }
 
   return (
-    <div className="flex items-center justify-center md:space-x-5 h-[80vh] flex-col md:flex-row fade-in">
+    <div className="flex items-center justify-center md:space-x-5 md:h-[80vh] flex-col md:flex-row fade-in mb-10">
       {showStats && (
         <div
           className={`p-4 rounded-xl text-white fade-in font-semibold text-center absolute top-2 ${
@@ -108,7 +108,7 @@ function Contact() {
         </h2>
         {/* Form */}
         <div className="shadow-base rounded-xl p-6">
-          <h4 className="text-green-pastel font-semibold text-center mb-6">
+          <h4 className="text-green-pastel font-semibold text-center mb-6 hidden md:block">
             Just fill out this form if you want more information or just want to
             provide feedback.
           </h4>
