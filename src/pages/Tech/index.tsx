@@ -42,13 +42,13 @@ function Tech() {
               <img src={boostrapIcon} alt="bootstrap" />
             </div>
           </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
+          <div className="flex w-1/3 md:w-1/4 p-3" title="Favorite">
+            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2 border border-green-pastel">
               <img src={nuxtIcon} alt="nuxt" />
             </div>
           </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
+          <div className="flex w-1/3 md:w-1/4 p-3" title="Favorite">
+            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2 border border-green-pastel">
               <img src={vueIcon} alt="vue" />
             </div>
           </div>

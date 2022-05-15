@@ -30,12 +30,19 @@ function Home({ social }: IHome) {
       </div>
 
       <div className="flex mt-9 space-x-6">
-        <button className="bg-beige-pastel font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=sandy.adzim@gmail.com"
+          target="_blank"
+          className="bg-beige-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
+        >
           Email
-        </button>
-        <button className="bg-navy-pastel font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl">
+        </a>
+        <a
+          href="#"
+          className="bg-navy-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
+        >
           Resume
-        </button>
+        </a>
       </div>
 
       <div className="md:hidden flex space-x-4 mt-5">

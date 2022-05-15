@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Tech from './pages/Tech'
 import Experience from './pages/Experience'
+import Project from './pages/Project'
 import Contact from './pages/Contact'
 
 import './App.css'
@@ -13,7 +14,7 @@ import Instagram from './assets/img/icons/ig.svg'
 import Linkedin from './assets/img/icons/linkedin.svg'
 
 function App() {
-  const [activeLink, setActiveLink] = useState('contact')
+  const [activeLink, setActiveLink] = useState('home')
 
   const socialMedia = [
     {
@@ -43,6 +44,8 @@ function App() {
         return <Tech />
       case 'experience':
         return <Experience />
+      case 'project':
+        return <Project />
       case 'contact':
         return <Contact />
       default:
@@ -77,7 +80,7 @@ function App() {
           </div>
         )}
 
-        {activeLink !== 'contact' && (
+        {activeLink !== 'contact' && activeLink !== 'project' && (
           <Pagination activeLink={activeLink} onHandleLink={handleChangeLink} />
         )}
       </div>
