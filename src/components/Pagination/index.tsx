@@ -64,7 +64,7 @@ function Pagination({ activeLink, onHandleLink }: IPagination) {
   }
 
   return (
-    <div className="absolute bottom-9 right-3 md:right-2">
+    <div className="absolute bottom-9 right-3 md:right-2 hidden md:block">
       <div className="space-x-6">
         <button
           onClick={() => prevPage(activeLink)}
