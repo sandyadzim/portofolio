@@ -14,15 +14,15 @@ function About() {
         </h2>
         <div className="font-bold text-navy-pastel text-xl text-justify mt-6 md:mt-12">
           <p>
-            A Front End Developer with 2+ years of professional experience, who
+            A Front End Developer with 3+ years of professional experience, who
             creates web applications with Javascript Framework such as VueJS,
             ReactJS, Angular JS, etc.
           </p>
           <p className="mt-4">
             I'm just a SMK graduate majoring in TKJ which is not really related
             to my current job. But after I graduated, I attended a Full Stack
-            Developer Bootcamp in Jakarta and until finally I was able to become
-            what I am now, which is to become a Front End Developer.
+            Developer Bootcamp in Jakarta and finally I was able to become
+            what I am now, which is Front End Developer.
           </p>
         </div>
       </div>
