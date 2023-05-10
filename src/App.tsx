@@ -29,7 +29,7 @@ function App() {
     },
     {
       img: Linkedin,
-      href: 'https://www.linkedin.com/in/sandy-rahmansyah-578322128/',
+      href: 'https://www.linkedin.com/in/sandy-rahmansyah/',
       slug: 'linkedin',
     },
   ]
