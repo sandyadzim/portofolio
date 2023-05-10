@@ -4,15 +4,29 @@ import expIcon from '../../assets/img/experience.png'
 import './index.scss'
 
 function Experience() {
-  const [active, setActive] = useState('gramedia')
+  const [active, setActive] = useState('memberid')
   const listExp = [
+    {
+      title: 'Member.id',
+      slug: 'memberid',
+      job: 'Front End Developer',
+      location: 'PT. Global Loyal Sejahtera',
+      start: 'July 2022',
+      end: 'Present',
+      jobdesk: [
+        'Developed and maintained multiple websites and web applications.',
+        'Collaborated with UI/UX and Backend teams to develop new features.',
+        'Utilized Vue JS to create user interfaces with dynamic functionality.',
+        'Worked with senior developers to troubleshoot and debug code issues.'
+      ],
+    },
     {
       title: 'Gramedia',
       slug: 'gramedia',
       job: 'Front End Developer',
       location: 'PT. Gramedia Asri Media',
-      start: 'Januari 2021',
-      end: 'May 2022',
+      start: 'January 2021',
+      end: 'July 2022',
       jobdesk: [
         'Create new web applications for Gramedia such as Mitra Gramedia, New Dashboard, etc.',
         'Maintain, develop, and improve existing web applications in Gramedia.',
@@ -25,7 +39,7 @@ function Experience() {
       job: 'Front End Developer (Part Time)',
       location: 'PT. Teknologi Sejuta Tangan (Superhand)',
       start: 'January 2021',
-      end: 'Juni 2021',
+      end: 'June 2021',
       jobdesk: [
         'Create and develop new landing page for Superhand and WasiatOnline.',
         'Collaborate with UI/UX and Backend teams to develop new landing page.',

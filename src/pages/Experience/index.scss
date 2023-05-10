@@ -40,7 +40,7 @@
 }
 
 .tabs-sm {
-  @apply flex md:hidden items-center space-x-3 mb-5;
+  @apply flex md:hidden items-center space-x-3 mb-5 overflow-x-auto overflow-y-hidden max-w-xs;
 
   .tab-item {
     @apply relative text-navy-pastel font-bold after:bg-green-pastel;
