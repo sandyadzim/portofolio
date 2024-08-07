@@ -6,6 +6,69 @@ import linkIcon from '../../assets/img/icons/link.svg'
 function Project() {
   const listProject = [
     {
+      title: 'Reservation CMS',
+      description:
+        'CMS specifically designed to streamline the reservation process for restaurants and/or bars. It makes managing reservation easier and faster.',
+      stack: ['VueJs', 'Typescript', 'Element Plus', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Solva Mall Revamp',
+      description:
+        'Application to set up a loyalty program for client mobile applications, specifically for clients in malls. (new version stacks)',
+      stack: ['VueJs', 'Typescript', 'Element Plus', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Cherry Portal',
+      description:
+        'Application to display all catalogs such as vouchers, missions, redemption points, etc. for client membership.',
+      stack: ['VueJs', 'Typescript', 'Element Plus', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Cherry CSWEB',
+      description:
+        'Application to manually add members, add points, etc. for the internal side.',
+      stack: ['VueJs', 'Typescript', 'Element Plus', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Cherry CMS',
+      description:
+        'Application to set up a loyalty program for Cherry',
+      stack: ['VueJs', 'Typescript', 'Element Plus', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Lemon CSWEB',
+      description:
+        'Application to display all catalogs such as vouchers, missions, etc. from Lemon CMS on the internal side',
+      stack: ['VueJs', 'Typescript', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Lemon CMS',
+      description:
+        'Application to set up a loyalty program for Lemon',
+      stack: ['VueJs', 'Typescript', 'Vuetify' , 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Solva FnB',
+      description:
+        'Application to set up a loyalty program for client mobile applications, specifically for clients in FnB.',
+      stack: ['VueJs', 'Vuetify', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
+      title: 'Solva Mall',
+      description:
+        'Application to set up a loyalty program for client mobile applications, specifically for clients in malls.',
+      stack: ['VueJs', 'Vuetify', 'Tailwind', 'SCSS'],
+      link: null,
+    },
+    {
       title: 'Mitra Gramedia',
       description:
         'Application for Gramedian partners who want to buy products in large quantities such as dropship and B2B and B2C.',
@@ -108,18 +171,18 @@ function Project() {
                     </a>
                   )}
                 </div>
-                <h4 className="font-bold text-navy-pastel mb-2">
+                <h4 className="text-lg font-bold text-navy-pastel mb-2">
                   {item.title}
                 </h4>
-                <p className="text-xs font-bold text-navy-pastel">
+                <p className="text-sm font-bold text-navy-pastel">
                   {item.description}
                 </p>
               </div>
-              <div className="flex items-center mt-4 space-x-2 flex-wrap">
+              <div className="flex items-center mt-4 gap-x-2 flex-wrap">
                 {item.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-beige-pastel rounded-md py-1 px-2 mt-2 text-white text-xs font-bold"
+                    className="bg-beige-pastel rounded-md py-1 px-2 mt-2 text-navy-pastel text-sm font-bold"
                   >
                     {tech}
                   </span>

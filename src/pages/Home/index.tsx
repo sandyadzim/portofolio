@@ -33,12 +33,12 @@ function Home({ social }: IHome) {
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=sandy.adzim@gmail.com"
           target="_blank"
-          className="bg-beige-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
+          className="bg-beige-pastel text-center font-bold text-navy-pastel text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
         >
           Email
         </a>
         <a
-          href="https://drive.google.com/file/d/1LoPQO0f90nMN4D3bcV5qbUIrt0Gd4uE5/view?usp=sharing"
+          href="https://drive.google.com/file/d/1u4xR9AuXUyvizf3sTzL19dZhMK-SVp2I/view?usp=sharing"
           target="_blank"
           className="bg-navy-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
         >

@@ -10,14 +10,14 @@ function Experience() {
       title: 'Member.id',
       slug: 'memberid',
       job: 'Front End Developer',
-      location: 'PT. Global Loyal Sejahtera',
+      location: 'PT. Nawasena Cipta Raya',
       start: 'July 2022',
       end: 'Present',
       jobdesk: [
         'Developed and maintained multiple websites and web applications.',
         'Collaborated with UI/UX and Backend teams to develop new features.',
         'Utilized Vue JS to create user interfaces with dynamic functionality.',
-        'Worked with senior developers to troubleshoot and debug code issues.'
+        'Worked with senior developers to troubleshoot and debug code issues.',
       ],
     },
     {

@@ -14,6 +14,56 @@ import tailwindIcon from '../../assets/img/icons/tailwind.svg'
 import tsIcon from '../../assets/img/icons/ts.svg'
 
 function Tech() {
+  const listTech = [
+    {
+      name: 'html',
+      image: htmlIcon,
+    },
+    {
+      name: 'css',
+      image: cssIcon,
+    },
+    {
+      name: 'js',
+      image: jsIcon,
+      customClass: 'md:w-[75px] w-[60px]',
+    },
+    {
+      name: 'bootstrap',
+      image: boostrapIcon,
+    },
+    {
+      name: 'angular',
+      image: angularIcon,
+    },
+    {
+      name: 'vue',
+      image: vueIcon,
+      isFav: true,
+    },
+    {
+      name: 'nuxt',
+      image: nuxtIcon,
+      isFav: true,
+    },
+    {
+      name: 'react',
+      image: reactIcon,
+    },
+    {
+      name: 'typescript',
+      image: tsIcon,
+    },
+    {
+      name: 'tailwind',
+      image: tailwindIcon,
+    },
+    {
+      name: 'sass',
+      image: sassIcon,
+    },
+  ]
+
   return (
     <div className="flex items-center justify-center md:space-x-5 h-[80vh] flex-col md:flex-row fade-in">
       <div className="md:w-1/2 flex-1 flex justify-center flex-col">
@@ -22,61 +72,25 @@ function Tech() {
         </h2>
 
         <div className="flex-wrap flex justify-center">
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={htmlIcon} alt="html" />
+          {listTech.map((item, index) => (
+            <div key={index} className="flex w-1/3 md:w-1/4 p-3">
+              <div
+                className={`flex justify-center flex-1 rounded-xl shadow-base p-2 ${
+                  item.isFav ? 'border-2 border-green-pastel' : ''
+                }`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className={
+                    item.customClass
+                      ? `${item.customClass}`
+                      : 'w-24 h-auto object-contain'
+                  }
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={cssIcon} alt="css" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={jsIcon} alt="js" className="md:w-[75px] w-[60px]" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={boostrapIcon} alt="bootstrap" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3" title="Favorite">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2 border border-green-pastel">
-              <img src={nuxtIcon} alt="nuxt" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3" title="Favorite">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2 border border-green-pastel">
-              <img src={vueIcon} alt="vue" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={reactIcon} alt="react" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={angularIcon} alt="angular" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={sassIcon} alt="sass" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={tailwindIcon} alt="tailwind" />
-            </div>
-          </div>
-          <div className="flex w-1/3 md:w-1/4 p-3">
-            <div className="flex justify-center flex-1 rounded-xl shadow-base p-2">
-              <img src={tsIcon} alt="ts" />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <div className="md:w-1/2 lg:flex hidden justify-center">
