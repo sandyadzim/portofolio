@@ -38,7 +38,7 @@ function Home({ social }: IHome) {
           Email
         </a>
         <a
-          href="https://drive.google.com/file/d/1u4xR9AuXUyvizf3sTzL19dZhMK-SVp2I/view?usp=sharing"
+          href="https://drive.google.com/file/d/1k3I_bWcZYi7dv3B2_AIlUSqMUesBmYZQ/view?usp=sharing"
           target="_blank"
           className="bg-navy-pastel text-center font-bold text-white text-xl md:text-2xl w-44 shadow-base py-2 rounded-xl"
         >
