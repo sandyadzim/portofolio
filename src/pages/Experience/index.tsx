@@ -11,7 +11,7 @@ function Experience() {
       slug: 'memberid',
       job: 'Front End Developer',
       location: 'PT. Nawasena Cipta Raya',
-      start: 'July 2022',
+      start: 'August 2022',
       end: 'Present',
       jobdesk: [
         'Developed and maintained multiple websites and web applications.',
